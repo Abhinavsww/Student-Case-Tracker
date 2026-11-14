@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Create New Case
+        </title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="layout">
+            <div class="sidebar">
+                <div class="logo">
+                    <img alt="Lovely Professional University logo" src="https://www.lpu.in/lpu-assets/images/media-kit/lpu-logo.jpg"/>
+                    <div class="logo-title">
+                        Academic Integrity
+                        <br/>
+                        <span>
+                            Case Tracker
+                        </span>
+                        <small>
+                            CSE 326 &bull; Student Project
+                        </small>
+                    </div>
+                </div>
+                <div class="nav">
+                    <a href="dashboard.html">
+                        Dashboard
+                    </a>
+                    <a href="problems.html">
+                        Student Problems
+                    </a>
+                    <a href="new-case.html">
+                        Create New Case
+                    </a>
+                    <a href="cases.html">
+                        Cases
+                    </a>
+                    <a href="students.html">
+                        Students
+                    </a>
+                    <a href="evidence.html">
+                        Evidence
+                    </a>
+                    <a href="meetings.html">
+                        Meetings &amp; Decisions
+                    </a>
+                    <a href="audit.html">
+                        Audit History
+                    </a>
+                </div>
+                <div class="nav logout">
+                    <a href="index.html">
+                        Logout
+                    </a>
+                </div>
+            </div>
+            <main class="main">
+                <div class="topbar">
+                    <h1>
+                        Create New Case
+                    </h1>
+                    <p class="subtitle">
+                        Register a new academic integrity case
+                    </p>
+                </div>
+                <div class="section">
+                    <form data-form="new-case">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>
+                                    Case ID
+                                </label>
+                                <input placeholder="AI-004" required="" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Student Name
+                                </label>
+                                <input placeholder="Enter student name" required="" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Registration Number
+                                </label>
+                                <input placeholder="Enter registration number" required="" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Course
+                                </label>
+                                <input placeholder="CSE101" required="" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Assigned Officer
+                                </label>
+                                <input placeholder="Officer name" type="text"/>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Status
+                                </label>
+                                <select>
+                                    <option>
+                                        Open
+                                    </option>
+                                    <option>
+                                        Under Review
+                                    </option>
+                                    <option>
+                                        Closed
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group full">
+                                <label>
+                                    Incident Description
+                                </label>
+                                <textarea placeholder="Describe the reported incident..."></textarea>
+                            </div>
+                            <div class="form-group full">
+                                <label>
+                                    Evidence Reference
+                                </label>
+                                <input placeholder="Enter document or evidence reference" type="text"/>
+                            </div>
+                        </div>
+                        <button class="btn" type="submit">
+                            Create Case
+                        </button>
+                        <a class="btn secondary" href="dashboard.html">
+                            Cancel
+                        </a>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <script src="app.js">
+        </script>
+    </body>
+</html>
